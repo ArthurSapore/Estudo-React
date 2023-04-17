@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* alinha no centro em relação a horizontal*/
+    align-content: center; /*alinha no centro em relação a horizontal*/
+}
+#container-login{   
+    border-radius: 15px;
+    background-color:azure;
+    width: 50vh;
+}
+
+#container-login-title{
+    color: rgb(17 24 39);
+}
+
+
+#container-login-logo img{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+#container-login-title{
+    text-align: center;
+}
+#container-login-form{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#container-login-form-email{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#container-login-form-password{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+label{
+    display: block;
+    color: rgb(55 65 81);
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+input{
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 16px;
+    background: #FFF;
+    border: 1px solid #a8a8b3;
+    width: 300px;
+}
+#container-login-form-button button{
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+    font-weight: 500;
+    background-color: #835afd;
+    color: #FFF;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+}
+
+#separator{
+    font-size: 14px;    
+    color: #a8a8b3;
+    margin: 32px 50px;
+    display: flex;
+    align-items: center;
+}
+
+#separator::before{
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #a8a8b3;
+    margin-right: 16px;
+}
+
+#separator::after{
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #a8a8b3;
+    margin-left: 16px;
+}
+
+#button-google{
+    margin-top: 15px;
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+    font-weight: 500;
+    background-color: #FFF;
+    color: #3c4043;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #dadce0
+}
+#button-google span{
+    margin: 10px;
+}
+#button-google img{
+    margin: 0;
+    width: 25px;
+}
+#container-login-form-text{
+    justify-content: center; 
+    margin: 10px;
+    text-align: center; /*centraliza os conteúdos dentro de uma div sem alterar as dimensões*/
+}
+
+#container-login-form-text span{
+    color: rgb(107 114 128);
+}
+
+#container-login-form-text a{
+    text-decoration: none;
+}
+#container-login-form-text a:hover{
+    text-decoration: underline
+}
+
